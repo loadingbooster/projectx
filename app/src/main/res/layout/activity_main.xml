@@ -4,27 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <SearchView
-        android:id="@+id/homesearch"
+    <FrameLayout
+        android:id="@+id/fragmentcont"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:searchHintIcon="Search Here"/>
+        android:layout_height="match_parent"
+        android:layout_above="@id/navbar"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/inftrend"
+<FrameLayout
+    android:id="@+id/navbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/homesearch"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fastrend"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/inftrend"/>
-
-
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_home_24"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/trendicon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_trending_up_24"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>
 </RelativeLayout>

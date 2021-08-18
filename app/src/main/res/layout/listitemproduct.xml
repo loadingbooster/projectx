@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/searccard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="5dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+   >
+    <ImageView
+        android:id="@+id/prodimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/black"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/prodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prodimage"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="Product Name" />
+
+    <TextView
+        android:id="@+id/proddiscip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prodname"
+        android:text="Product Discrip." />
+
+    <TextView
+        android:id="@+id/prodprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proddiscip"
+        android:text="Product Price" />
+    <ImageButton
+        android:id="@+id/listitemcart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_below="@id/prodprice"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_shopping_cart_24"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
