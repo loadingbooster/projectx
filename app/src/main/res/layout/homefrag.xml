@@ -55,30 +55,26 @@
             android:gravity="center_vertical"
             android:orientation="horizontal" >
             <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="12sp"
                 android:text="MEN"/>
             <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="12sp"
                 android:text="WOMEN"/>
             <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="12sp"
                 android:text="KIDS"/>
             <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:textSize="12sp"
                 android:text="SHOE"/>
